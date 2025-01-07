@@ -1,29 +1,37 @@
-# to-do-list
+# TO DO LIST APPLICATION USING VUE
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a Vue.js application for managing a simple **To-Do List**. It demonstrates basic operations and state management using Vue's Composition API.
 
-## Recommended IDE Setup
+## Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Add new tasks to the list.
+- Delete tasks from the list.
+- Automatically generates unique indices for tasks.
 
-## Customize configuration
+## Project Structure
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Components
+- `Header.vue` - Displays the application header.
+- `TaskList.vue` - Renders the list of tasks.
+- `AddList.vue` - Provides functionality to add new tasks.
 
-## Project Setup
+### Core Logic
+- **Add Task**: Uses `handleAddingNewTask()` to add a new task with a unique index.
+- **Delete Task**: Uses `deleteTask()` to remove tasks by index.
+- **Unique Index Generation**: Implements `generateIndex()` to ensure unique task IDs.
 
-```sh
-npm install
-```
+## Setup and Usage
 
-### Compile and Hot-Reload for Development
+### Prerequisites
+- Node.js and npm installed.
+- Vue CLI installed globally.
 
-```sh
-npm run dev
-```
+### Installation
+1. Clone the repository to any project folder.
+2. navigate to the project folder that contains the clone repository.
+3. Install dependencies using `npm install`
+3. Run the application by starting the development server using: `npm run dev`
 
-### Compile and Minify for Production
+## License
 
-```sh
-npm run build
-```
+This project is open-source and available under the MIT License.

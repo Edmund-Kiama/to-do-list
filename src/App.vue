@@ -4,10 +4,6 @@
     <task-list :tasks="tasks" @handle-deletion="deleteTask"></task-list>
     <add-list @adding-new-task="handleAddingNewTask" ></add-list>
 </div>
-
-<div id="expenseTracker">
-  
-</div>
 </template>
 
 <script setup>
