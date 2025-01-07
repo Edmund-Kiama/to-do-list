@@ -11,14 +11,24 @@ This project is a Vue.js application for managing a simple **To-Do List**. It de
 ## Project Structure
 
 ### Components
+
 - `Header.vue` - Displays the application header.
 - `TaskList.vue` - Renders the list of tasks.
 - `AddList.vue` - Provides functionality to add new tasks.
 
 ### Core Logic
-- **Add Task**: Uses `handleAddingNewTask()` to add a new task with a unique index.
-- **Delete Task**: Uses `deleteTask()` to remove tasks by index.
-- **Unique Index Generation**: Implements `generateIndex()` to ensure unique task IDs.
+
+1. Reactive Task List  
+   Tasks are stored in a reactive `ref` array, ensuring the UI updates automatically when tasks are added or deleted.
+
+2.  Adding Tasks
+    Handles new task submissions using handleAddingNewTask() and generates a unique index for each task.
+
+3.  Deleting Tasks
+    Removes tasks by filtering the list based on the unique index.
+
+4.  Unique Index Generation
+    Ensures each task has a unique identifier using a simple random number generator.
 
 ## Setup and Usage
 
